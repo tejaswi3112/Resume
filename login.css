@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffb347, #ff6b6b, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #ffeb3b;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ffeb3b;
+}
+
+header .btn {
+    background: #ffeb3b;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.hero img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.cta-btn {
+    background: #ffeb3b;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #ffc107;
+    transform: scale(1.05);
+}
+
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255,255,255,0.9);
+}
+
+.feature-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-box div {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.feature-box div:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box img {
+    width: 50px;
+}
+
+footer {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+}
